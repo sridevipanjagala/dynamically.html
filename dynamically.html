@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Modifying Form Elements Dynamically</title>
+    <script>
+        function addInput() {
+            var form = document.getElementById("myForm");
+            var input = document.createElement("input");
+            input.type = "text";
+            input.name = "newInput";
+            form.appendChild(input); // Add the new input field to the form
+        }
+    </script>
+</head>
+<body>
+    <form id="myForm">
+        <input type="text" name="name"><br>
+        <input type="button" value="Add Input" onclick="addInput()">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
